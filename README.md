@@ -13,13 +13,17 @@ sudo pacman -S nvim
 ```
 
 ## Install amix/vimrc to stylish nvim
+```
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+```
 
 ## Let nvim use settings from .vimrc, edit ~/.config/nvim/init.vim
+```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
     let &packpath = &runtimepath
             source ~/.vimrc
+```
 
 ## Enable clipboard between neovim and system clipboard
 Install xclip in system
@@ -27,8 +31,12 @@ Install xclip in system
 sudo pacman -S xclip
 ```
 Open ~/.vim_runtime/my_configs, add
+
+```
 set clipboard+=unnamedplus
+```
 Copy from nvim to system clipboard "+y
+
 Copy from system clipboard to nvim ctrl+shift+v
 
 ## Check neovim health
@@ -51,14 +59,17 @@ sudo pacman -S linux-lts-header
 sudo pacman -S virtualbox virtualbox-host-dkms
 ```
 In virtualbox
+
 Add vdi in virtual media manager
+
 Add vdi in setting | Storage | controller SATA
 
 ## Install dock plank(very simple)
 ```
 sudo pacman -S plank
 ```
-press Ctrl + right click, go to references, set Theme as transparent.
+Press Ctrl + right click, go to references, set Theme as transparent.
+
 Remove field line, Window Manager Tweaks | Compositor | uncheck show shadow under dock windows
 
 ## Setup flask environment
@@ -119,4 +130,8 @@ alias ssh_home='ssh username@ip.server'
 
 ## tmux settings
 add alias tmew='tmux new -s ' in ~/.bashrc
+
 setup ~/.tmux.conf
+```
+
+```
