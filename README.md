@@ -12,20 +12,21 @@ PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W \A\[\033[01;32m\]]\$\[\033[00m\] '
 sudo pacman -S nvim
 ```
 
-## Install amix/vimrc to stylish nvim
+## Install [amix/vimrc](https://github.com/amix/vimrc)
 ```
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
-## Let nvim use settings from .vimrc, edit ~/.config/nvim/init.vim
+## Let nvim use settings from .vimrc
+edit ~/.config/nvim/init.vim
 ```
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
     let &packpath = &runtimepath
             source ~/.vimrc
 ```
 
-## Enable clipboard between neovim and system clipboard
+## Enable clipboard between neovim and system
 Install xclip in system
 ```
 sudo pacman -S xclip
@@ -42,11 +43,11 @@ Copy from system clipboard to nvim `ctrl+shift+v`
 ## Check neovim health
 `:checkhealth`
 
-## Install redshift to filter out blue light
+## Install redshift for blue light
 ```
 sudo pacman -S redshift
 ```
-Add configure at ~/.config/redshift/redshift.conf
+Copy [configure file](./Redshift/redshift.conf) to ~/.config/redshift/redshift.conf
 
 ## Install calibre
 ```
@@ -64,7 +65,7 @@ Add vdi in virtual media manager
 
 Add vdi in setting | Storage | controller SATA
 
-## Install dock plank(very simple)
+## Install dock plank
 ```
 sudo pacman -S plank
 ```
