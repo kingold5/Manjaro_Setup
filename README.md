@@ -133,5 +133,25 @@ add alias tmew='tmux new -s ' in ~/.bashrc
 
 setup ~/.tmux.conf
 ```
+# Set escape-time
+set-option -sg escape-time 10
 
+# Set 256 color
+set-option -g default-terminal "screen-256color"
+
+# Set scrollback buffer to 10000
+set -g history-limit 10000
+
+# Customize the status line
+#set -g status-fg green
+#set -g status-bg black
+
+# hjkl pane traversal
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Use mouse for scrolling
+set -g mouse on
 ```
