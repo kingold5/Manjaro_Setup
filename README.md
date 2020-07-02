@@ -35,12 +35,12 @@ Open ~/.vim_runtime/my_configs, add
 ```
 set clipboard+=unnamedplus
 ```
-Copy from nvim to system clipboard "+y
+Copy from nvim to system clipboard `"+y`
 
-Copy from system clipboard to nvim ctrl+shift+v
+Copy from system clipboard to nvim `ctrl+shift+v`
 
 ## Check neovim health
-:checkhealth
+`:checkhealth`
 
 ## Install redshift to filter out blue light
 ```
@@ -68,7 +68,7 @@ Add vdi in setting | Storage | controller SATA
 ```
 sudo pacman -S plank
 ```
-Press Ctrl + right click, go to references, set Theme as transparent.
+Press `Ctrl + right click`, go to references, set Theme as transparent.
 
 Remove field line, Window Manager Tweaks | Compositor | uncheck show shadow under dock windows
 
@@ -121,6 +121,7 @@ Send public key to server
 ssh-copy-id -i ~/.ssh/id_rsa.pub username@ip.server
 ```
 Setup /etc/ssh/sshd_config on server
+
 ....
 
 Setup alias in .bashrc for fast login
